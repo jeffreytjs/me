@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import React from 'react'
@@ -17,22 +16,6 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-
-    emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload()
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
-
   return (
     <>
       <div className="container contact-page">
@@ -46,7 +29,7 @@ const Contact = () => {
           </h1>
           <p>Hello! Tell or ask me anything!</p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form action="https://formspree.io/f/xvonzaev" method="POST">
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -80,13 +63,6 @@ const Contact = () => {
               </ul>
             </form>
           </div>
-        </div>
-        <div className="info-map">
-          Jeffrey Tan,
-          <br />
-          Singapore,
-          <br />
-          <span>jeffreytjs1996@gmail.com</span>
         </div>
       </div>
       <Loader type="pacman" />
