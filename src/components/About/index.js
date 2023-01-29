@@ -15,7 +15,6 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const aboutMeArray = 'About me'.split('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -30,7 +29,7 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={aboutMeArray}
+              strArray={'About me'.split('')}
               idx={15}
             />
           </h1>

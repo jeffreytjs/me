@@ -7,7 +7,6 @@ import React from 'react'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const contactMeArray = 'Contact me'.split('')
   const form = useRef()
 
   useEffect(() => {
@@ -23,7 +22,7 @@ const Contact = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={contactMeArray}
+              strArray={'Contact me'.split('')}
               idx={15}
             />
           </h1>

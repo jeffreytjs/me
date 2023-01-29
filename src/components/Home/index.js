@@ -9,7 +9,6 @@ import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ' Jeffrey Tan'.split('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -29,7 +28,7 @@ const Home = () => {
             <span className={`${letterClass} _14`}>'m </span>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={nameArray}
+              strArray={' Jeffrey Tan'.split('')}
               idx={15}
             />
           </h1>
