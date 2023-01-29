@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-import { useRef } from 'react'
-import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import AnimatedLetters from '../AnimatedLetters'
 import React from 'react'
+import { useEffect, useState } from 'react'
+import { useRef } from 'react'
+import Loader from 'react-loaders'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')

@@ -1,9 +1,9 @@
 import './index.scss'
+import LogoJ from '../../assets/images/logo-j.png'
+import LogoSubtitle from '../../assets/images/logo-sub.png'
 import React from 'react'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import LogoJ from '../../assets/images/logo-j.png'
-import LogoSubtitle from '../../assets/images/logo-sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {
