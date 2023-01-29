@@ -11,7 +11,8 @@ import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 import React from 'react'
-import { faDatabase } from '@fortawesome/free-solid-svg-icons'
+import { faCat, faDatabase } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -50,6 +51,22 @@ const About = () => {
             myself a bit at a time.
           </p>
           <p>I kinda like cats.</p>
+          <Link to="/portfolio" className="flat-button">
+            Portfolio
+            <FontAwesomeIcon
+              icon={faCat}
+              color="#8d8d8ds"
+              className="anchor-icon"
+            />
+          </Link>
+          <Link to="/contact" className="flat-button">
+            Contact Me
+            <FontAwesomeIcon
+              icon={faCat}
+              color="#8d8d8ds"
+              className="anchor-icon"
+            />
+          </Link>
         </div>
 
         <div className="stage-cube-cont">
