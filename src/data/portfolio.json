@@ -1,34 +1,34 @@
 {
   "portfolio": [
     {
-      "cover": "/portfolio/1/wen_booster.png",
+      "cover": "portfolio/wen_booster.png",
       "title": "Wen Booster",
       "description": "Calculates 270 days from your last effective vaccination date",
       "url": "https://jeffreytjs.github.io/WEN-BOOSTER/"
     },
     {
-      "cover": "/portfolio/1/wen_booster.png",
+      "cover": "portfolio/wen_booster.png",
       "title": "Project 2",
       "description": "Balabubu",
-      "url": "http://google.com"
+      "url": "https://google.com"
     },
     {
-      "cover": "/portfolio/1/wen_booster.png",
+      "cover": "portfolio/wen_booster.png",
       "title": "Project 3",
       "description": "Balabubu",
-      "url": "http://google.com"
+      "url": "https://google.com"
     },
     {
-      "cover": "/portfolio/1/wen_booster.png",
+      "cover": "portfolio/wen_booster.png",
       "title": "Project 4",
       "description": "Balabubu",
-      "url": "http://google.com"
+      "url": "https://google.com"
     },
     {
-      "cover": "/portfolio/1/wen_booster.png",
+      "cover": "portfolio/wen_booster.png",
       "title": "Project 5",
       "description": "Balabubu",
-      "url": "http://google.com"
+      "url": "https://google.com"
     }
   ]
 }
